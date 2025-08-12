@@ -1,0 +1,43 @@
+/* Defina um estilo geral para a Pokédex (fontes, cores, etc.).
+ Estilize o layout da página para que a Pokédex fique centralizada na tela.
+ Estilize a exibição dos detalhes do Pokémon (imagem, nome, tipo).
+ Crie estilos responsivos para diferentes tamanhos de tela. */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: rgb(138, 212, 244);
+}
+#exibir-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pokemon_image {
+	height: 15%;
+	position: absolute;
+	bottom: 55%;
+	left: 50%;
+	transform: translate(-63%, 165%);
+}
+header {
+	font-family: "Rubik Glitch", system-ui;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	font-size: 100px;
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	.pokedex {
+		display: inline-block;
+		margin-top: 2%;
+		padding: 15px;
+	}
+	.titulo {
+		font-size: 20px;
+	}
+}
