@@ -1,26 +1,31 @@
-<!-- Crie a estrutura básica de um documento HTML.
- Inclua uma seção <header> com o título "Pokédex".
- Crie uma <div> ou <section> para exibir as informações do Pokémon.
-Adicione um campo de entrada ( <input> ) e um botão para buscar Pokémon pelo nome ou ID -->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Links -->
 		<link rel="icon" href="/icons/pokeball.png" />
 		<link rel="stylesheet" href="/css/style.css" />
+		<!-- Main JS -->
+		<script defer src="./js/script.js"></script>
 		<title>Pokédex</title>
 	</head>
 	<body>
 		<header id="titulo">Pokedex</header>
 		<div id="exibir-info">
-			<img
-				src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif"
-				alt="pokemon"
-				class="pokemon_image"
-			/>
+			<img src="#" alt="pokemon" class="pokemon_image" />
+			<h1 class="pokemon_data">
+				<span class="pokemon_number"></span> -
+				<span class="pokemon_name"></span>
+			</h1>
+			<form class="form">
+				<input type="search" class="input_search" placeholder="Name or Number" required />
+			</form>
 			<img src="/images/pokedex.png" alt="Interface Pokedex" class="pokedex" />
+		</div>
+		<div class="buttons">
+			<button class="button btn-prev">Prev &lt;</button>
+			<button class="button btn-next">Next &gt;</button>
 		</div>
 	</body>
 </html>
