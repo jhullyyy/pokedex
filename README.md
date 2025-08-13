@@ -1,5 +1,5 @@
 <h1>Dia 1</h1>
-##
+<br>
 ##Estrutura Básica (HTML)
 Crie a estrutura básica de um documento HTML;
 Inclua uma seção <header> com o título "Pokédex";
@@ -10,7 +10,7 @@ Defina um estilo geral para a Pokédex (fontes, cores, etc.);
 Estilize o layout da página para que a Pokédex fique centralizada na tela.
 
 <h1>Dia 2</h1>
-##
+<br>
 ##Estilização(CSS)
 Estilize a exibição dos detalhes do Pokémon (imagem, nome, tipo).
 
