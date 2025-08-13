@@ -1,5 +1,4 @@
-<h1>Projeto Pokédex</h1>  
-<img align="right" id="gif"src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmhtM2U4N2YwdGk3OHE0eW1wNmowOGFycmhmNWN3MDNuemVsMnZ4NyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Sd9XrDFZZ0Q0OXAdJM/giphy.gif" width="100" height="100"/>
+<h1>Projeto Pokédex 🎮</h1>  
 <h2>Dia 1</h2>
 <i>Estrutura Básica (HTML)</i>
 <ul>
