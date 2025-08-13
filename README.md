@@ -1,6 +1,6 @@
 <h1>Dia 1</h1>
 <br>
-<h2>Estrutura Básica (HTML)</h2>
+##Estrutura Básica (HTML)
 <ul>
 <li>Criar a estrutura básica de um documento HTML ✅</li>
 <li>Incluir uma seção <header> com o título "Pokédex" ✅</li>
