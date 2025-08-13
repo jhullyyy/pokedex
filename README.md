@@ -18,7 +18,7 @@
 <li>Estilize a exibição dos detalhes do Pokémon (imagem, nome, tipo) ✅</li>
 </ul>
 
-<h1>Lógica de Busca (JavaScript)</h1>
+<i>Lógica de Busca (JavaScript)</i>
 <ul>
 <li>Implemente a captura do valor do campo de entrada ao clicar no botão de busca ✅</li>
 <li>Faça uma requisição à PokéAPI para buscar os dados do Pokémon usando o nome ou ID fornecido ✅</li>
