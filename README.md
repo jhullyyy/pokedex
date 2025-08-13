@@ -3,7 +3,7 @@
 <ul>
 <li>Criar a estrutura básica de um documento HTML ✅</li>
 <li>Incluir uma seção <header> com o título "Pokédex" ✅</li>
-<li>Criar uma "<div>" ou "<section>" para exibir as informações do Pokémon ✅</li>
+<li>Criar uma div ou section para exibir as informações do Pokémon ✅</li>
 </ul>
 
 ##Estilização (CSS)
