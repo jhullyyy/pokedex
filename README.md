@@ -1,4 +1,5 @@
-<h1>Dia 1</h1>
+<h1>Projeto Pokedex</h1>
+<h2>Dia 1</h2>
 <i>Estrutura Básica (HTML)</i>
 <ul>
 <li>Criar a estrutura básica de um documento HTML ✅</li>
@@ -12,7 +13,7 @@
 <li>Estilizar o layout da página para que a Pokédex fique centralizada na tela ✅</li>
 </ul>
 
-<h1>Dia 2</h1>
+<h2>Dia 2</h2>
 <i>Estilização(CSS)</i>
 <ul>
 <li>Estilizar a exibição dos detalhes do Pokémon (imagem, nome, tipo) ✅</li>
