@@ -6,20 +6,19 @@ const form = document.querySelector(".form");
 const input = document.querySelector(".input_search");
 const buttonPrev = document.querySelector(".btn-prev");
 const buttonNext = document.querySelector(".btn-next");
-const exibir20Div = document.querySelector(".exibir-20"); //div que vai exibir os 20 primeiros pokemons
-const button20 = document.querySelector(".btn-20");
-
-button20.addEventListener("click", async () => {
-	exibir20Div.innerHTML = "";
-	const pokemons = await fetchVintePokemon();
-	pokemons.forEach((pokemon) => {
-		const pokemonItem = document.createElement("div");
-		pokemonItem.textContent = pokemon.name;
-		exibir20Div.appendChild(pokemonItem);
-	});
-});
+// const buttonHabilidades = document.querySelector(".btn-habilidades");
 
 let searchPokemon = 1; //site abre no primeiro pokemon
+
+// buttonHabilidades.addEventListener("click", async () => {
+// 	const data = await fetchPokemon(searchPokemon);
+// 	if (data && data.abilities) {
+// 		const habilidades = data.abilities.map((hab) => hab.ability.name).join(", ");
+// 		alert(`Habilidades: ${habilidades}`);
+// 	} else {
+// 		alert("Nenhuma habilidade encontrada!");
+// 	}
+// });
 
 const fetchPokemon = async (pokemon) => {
 	//função que mostra os pokemons
@@ -29,17 +28,6 @@ const fetchPokemon = async (pokemon) => {
 		return data;
 	} else {
 		return null;
-	}
-};
-
-const fetchVintePokemon = async () => {
-	//função que mostra os vinte primeiros pokemons
-	const APIResponse = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20&offset=0");
-	if (APIResponse.status === 200) {
-		const data = await APIResponse.json();
-		return data.results;
-	} else {
-		return [];
 	}
 };
 

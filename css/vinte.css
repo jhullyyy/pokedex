@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #8ad4f4;
+}
+.navbar {
+	width: 100%;
+	background: #444;
+	padding: 12px 0;
+	text-align: center;
+}
+.navbar a {
+	color: #fff;
+	text-decoration: none;
+	font-family: monospace;
+	font-size: 18px;
+	padding: 8px 16px;
+	border-radius: 4px;
+	transition: background 0.2s;
+}
+.navbar a:hover {
+	background: #f06161;
+}
+header {
+	margin-top: 50px;
+	/* font-family: "Rubik Glitch", system-ui; */
+	font-family: monospace;
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+	font-size: 80px;
+	color: #fff;
+}
+header:hover {
+	color: rgb(240, 97, 97);
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+.centraliza-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn-20 {
+	width: 150px;
+	height: 80px;
+	margin: 20px;
+	border-radius: 21px;
+	border-width: 2px;
+	font-family: monospace;
+	font-size: 16px;
+	padding: 2px;
+	background-color: #f06161;
+	color: #ffffff;
+}
+.exibir-20 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	justify-content: center;
+	background: none;
+	width: 100%;
+	max-width: 600px;
+	margin: 32px auto;
+}
+.pokemon-card {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	padding: 10px;
+	width: 120px;
+	margin-bottom: 16px;
+	font-family: monospace;
+}
+.pokemon-card:hover {
+	border: #f06161 2px solid;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.pokemon-card img {
+	width: 80px;
+	height: 80px;
+}
+@media screen and (max-width: 800px) {
+	#titulo {
+		font-size: 40px;
+	}
+}
