@@ -25,12 +25,37 @@
 <li>Fazer uma requisição à PokéAPI para buscar os dados do Pokémon usando o nome ou ID fornecido ✅</li>
 <li>Exibir as informações básicas do Pokémon (nome, imagem, tipo) na página ✅</li>
 <li>Tratar erros de busca, exibindo uma mensagem caso o Pokémon não seja encontrado ✅</li>
+</ul>
+
+<i>4)Exibição de Lista de Pokémon</i>
+<ul>
 <li>Implementar uma função que faça uma requisição a PokéAPI para listar os 20 primeiros Pokémon  ✅</li>
 </ul>
 
 <h2>Dia 3</h2>
-<i>3)Lógica de Busca (JavaScript)</i>
+<i>4)Exibição de Lista de Pokémon</i>
+<ul>
+<li>Exibir lista na página com nome e imagem dos Pokémon✅</li>
+</ul>
+
+<i>7)Documentação</i>
 <ul>
   <li>Documentar o código JavaScript com comentários explicativos ✅</li>
   <li>Criar um arquivo README explicando como o projeto foi desenvolvido ✅</li>
 </ul>
+
+<h2>Dia 4</h2>
+
+<i>5)Funcionalidades Avançadas</i>
+<ul>
+<li>Adicionar a exibição de habilidades do Pokémon ✅</li>
+<li>Implementar a busca por múltiplos critérios(ex: tipo e nome) ✅</li>
+</ul>
+
+<h2>Dia 5</h2>
+<i>4)Exibição de Lista de Pokémon</i>
+<ul>
+<li>Implementar a navegação para carregar mais Pokémon (paginação) ✅</li>
+</ul>
+
+
