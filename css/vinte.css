@@ -5,6 +5,7 @@
 }
 body {
 	background-color: #8ad4f4;
+
 }
 .navbar {
 	width: 100%;
@@ -22,29 +23,35 @@ body {
 	transition: background 0.2s;
 }
 .navbar a:hover {
-	background: #f06161;
+	background: #8ad4f4;
+	color: #444;
+}
+.pesquisa-pokemon {
+	width: 270px;
+	height: 30px;
+	padding: 4px;
+	background-color: #ffffff;
+	font-family: monospace;
+	border-radius: 20px;
+	border: 2px solid #ffffff;
 }
 header {
 	margin-top: 50px;
-	/* font-family: "Rubik Glitch", system-ui; */
-	font-family: monospace;
-	font-weight: 300;
-	font-style: normal;
-	text-align: center;
-	font-size: 80px;
-	color: #fff;
-}
-header:hover {
-	color: rgb(240, 97, 97);
-	-webkit-transform: scale(0.8);
-	transform: scale(0.8);
+	font-family: 'Pokemon Solid', sans-serif;
+	letter-spacing: 2px;
+	word-spacing: -10px;
+    text-align: center;
+	font-size: 60px;
+	-webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #192e52;
+	color: #f6ff00;
 }
 .centraliza-btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.btn-20 {
+.btn-estilo {
 	width: 150px;
 	height: 80px;
 	margin: 20px;
@@ -69,24 +76,51 @@ header:hover {
 .pokemon-card {
 	background: #fff;
 	border-radius: 8px;
+	border: 4px solid #192e52;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	text-align: center;
 	padding: 10px;
-	width: 120px;
+	width: 100px;
+	height: 130px;
 	margin-bottom: 16px;
 	font-family: monospace;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+
 }
 .pokemon-card:hover {
-	border: #f06161 2px solid;
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
+	/* box-shadow: 0 0 40px #fbff15; */
+	box-shadow: 0 0 40px #da1a1a; 
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 .pokemon-card img {
 	width: 80px;
 	height: 80px;
 }
-@media screen and (max-width: 800px) {
-	#titulo {
-		font-size: 40px;
-	}
+.carregar_mais {
+	display: none;
 }
+#div-carregar-mais {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	justify-content: center;
+	background: none;
+	width: 100%;
+	max-width: 600px;
+	margin: 32px auto;
+}
+@media screen and (max-width: 780px) {
+	header {
+	margin-top: 30px;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+	font-size: 26px;
+	-webkit-text-stroke-width: 2px;
+    }
+}
+

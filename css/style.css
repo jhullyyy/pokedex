@@ -1,173 +1,159 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap"); */
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body {
-	background-color: #8ad4f4;
+    background-color: #8ad4f4;
 }
 .navbar {
-	width: 100%;
-	background: #444;
-	padding: 12px 0;
-	text-align: center;
+    width: 100%;
+    background: #444;
+    padding: 12px 0;
+    text-align: center;
 }
 .navbar a {
-	color: #fff;
-	text-decoration: none;
-	font-family: monospace;
-	font-size: 18px;
-	padding: 8px 16px;
-	border-radius: 4px;
-	transition: background 0.2s;
+    color: #fff;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s;
 }
 .navbar a:hover {
-	background: #f06161;
-}
-.pesquisa-pokemon {
-	width: 270px;
-	height: 30px;
-	padding: 4px;
-	background-color: #8ad4f4;
-	color: rgb(255, 255, 255);
-	font-family: monospace;
-	border-radius: 20px;
-}
-#exibir-info {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.pokemon_image {
-	height: 15%;
-	position: absolute;
-	bottom: 60%;
-	left: 50%;
-	transform: translate(-63%, 165%);
+    background: #8ad4f4;
+    color: #444;
 }
 header {
-	/* font-family: "Rubik Glitch", system-ui; */
-	font-family: monospace;
-	font-weight: 400;
-	font-style: normal;
-	text-align: center;
-	font-size: 100px;
-	color: #fff;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 60px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #192e52;
+    color: #f6ff00;
+    margin-top: -20px;
 }
-header:hover {
-	color: rgb(240, 97, 97);
-	-webkit-transform: scale(0.8);
-	transform: scale(0.8);
+
+/* Alterações para o layout responsivo */
+#exibir-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    padding: 20px; /* Adiciona um espaço geral */
 }
+
+/* A imagem do Pokémon e a Pokedex não precisam mais de posicionamento absoluto */
+.pokemon_image {
+    height: 150px; /* Altura fixa para manter a proporção */
+    position: static;
+    transform: none; /* Remove a transformação */
+    margin: 20px 0 10px; /* Espaçamento superior e inferior */
+}
+
 .pokedex {
-	width: 100%;
-	max-width: 325px;
+    width: 100%; /* Largura total */
+    max-width: 325px; /* Limita o tamanho máximo */
+    order: -1; /* Coloca a Pokedex no topo da flexbox */
 }
+
+/* Informações do Pokémon também não precisam mais de posicionamento absoluto */
 .pokemon_data {
-	position: absolute;
-	bottom: 28%;
-	font-family: monospace;
-	text-align: center;
-	font-size: 23px;
-	color: #998d8d;
+    position: static;
+    font-family: monospace;
+    text-align: center;
+    font-size: 23px;
+    color: #998d8d;
+    margin-bottom: 15px; /* Espaçamento inferior */
 }
 .pokemon_name {
-	color: #464141;
-	text-transform: capitalize;
+    color: #464141;
+    text-transform: capitalize;
 }
+
+/* Formulário e botões agora são parte do fluxo do documento */
 .form {
-	position: absolute;
-	top: 76%;
-	left: 43%;
+    position: static;
+    margin-top: 10px;
 }
 .input_search {
-	width: 100%;
-	padding: 4%;
-	outline: none;
-	border: 2px solid #333;
-	border-radius: 5px;
-	box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
-	/* tamanho, desfoque, cor */
+    width: 80%;
+    max-width: 250px;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
 }
 .buttons {
-	position: absolute;
-	bottom: 5%;
-	left: 50%;
-	width: 16%;
-	transform: translate(-57%, 0);
-	display: flex;
-	gap: 20px;
+    position: static;
+    width: 80%;
+    max-width: 300px;
+    transform: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
 }
 button {
-	width: 50%;
-	padding: 4%;
-	border: 2px solid #333;
-	border-radius: 5px;
-	font-family: monospace;
-	color: #fff;
-	background-color: #444;
-	box-shadow: -3px 4px 0 #888;
-	font-size: 12px;
+    width: 45%;
+    padding: 4%;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #fff;
+    background-color: #444;
+    box-shadow: -3px 4px 0 #888;
+    font-size: 12px;
 }
 .button:active {
-	background-color: #f06161;
-	box-shadow: inset -4px 4px 0 #222;
-	font-size: 0.9rem;
+    background-color: #f06161;
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
 }
 .habilidades-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 24px;
-	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    width: 100%;
 }
 .btn-habilidades {
-	width: 130px;
-	height: 20px;
-	padding: 4%;
-	border: 2px solid #333;
-	border-radius: 5px;
-	font-family: monospace;
-	color: #fff;
-	background-color: #444;
-	box-shadow: -3px 4px 0 #888;
-	font-size: 15px;
-	cursor: pointer;
+    width: 130px;
+    height: 20px;
+    padding: 4%;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #fff;
+    background-color: #444;
+    box-shadow: -3px 4px 0 #888;
+    font-size: 15px;
+    cursor: pointer;
 }
 .btn-habilidades:active {
-	background-color: #f06161;
-	box-shadow: inset -4px 4px 0 #222;
-	font-size: 0.9rem;
+    background-color: #f06161;
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
 }
-@media screen and (max-width: 800px) {
-	.pokedex {
-		display: inline-block;
-		margin-top: 2%;
-		padding: 15px;
-		max-width: 345px;
-	}
-	#titulo {
-		font-size: 68px;
-	}
-	.pokemon_image {
-		bottom: 63%;
-	}
-	.pokemon_data {
-		font-size: 23px;
-		bottom: 30%;
-	}
-	.input_search {
-		padding: 3%;
-	}
-	.buttons {
-		bottom: 10%;
-		left: 50%;
-		width: 35%;
-		gap: 20px;
-	}
-	.form {
-		position: absolute;
-		top: 75%;
-		left: 33%;
-	}
+
+/* Media Queries para ajuste fino */
+@media screen and (max-width: 450px) {
+    header {
+        font-size: 40px;
+    }
+    .pokemon_data {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #exibir-info {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .pokedex {
+        order: 0;
+    }
 }

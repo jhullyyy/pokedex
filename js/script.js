@@ -10,15 +10,6 @@ const buttonNext = document.querySelector(".btn-next");
 
 let searchPokemon = 1; //site abre no primeiro pokemon
 
-// buttonHabilidades.addEventListener("click", async () => {
-// 	const data = await fetchPokemon(searchPokemon);
-// 	if (data && data.abilities) {
-// 		const habilidades = data.abilities.map((hab) => hab.ability.name).join(", ");
-// 		alert(`Habilidades: ${habilidades}`);
-// 	} else {
-// 		alert("Nenhuma habilidade encontrada!");
-// 	}
-// });
 
 const fetchPokemon = async (pokemon) => {
 	//função que mostra os pokemons

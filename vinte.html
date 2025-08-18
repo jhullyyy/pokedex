@@ -5,25 +5,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Links -->
 		<link rel="icon" href="/images/pokeball.png" />
-		<link rel="stylesheet" href="/css/vinte.css" />
+		<link rel="stylesheet" href="css/vinte.css" />
+		<link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
 		<!-- Main JS -->
-		<script defer src="./js/vinte.js"></script>
+		<script defer src="js/vinte.js"></script>
 		<title>Vinte primeiros Pokemon</title>
 	</head>
 	<body>
 	    <nav class="navbar">
 		 <a href="index.html">Pokedex</a>
+		<input type="search" class="pesquisa-pokemon" placeholder="Informe nome ou número do Pokemon" required />
 		</nav>
 		<header id="titulo">Vinte primeiros Pokemon</header>
 		<div class="centraliza-btn">
-			<button class="btn-20">
-				Vinte primeiros Pokémon!
+			<button class="btn-estilo btn-20">Confira os 20 primeiros Pokemon!
 				<!-- ao clicar nesse botão deverá ser exibido os 20 primieros pokemon -->
 			</button>
 		</div>
 		<div class="exibir-20">
-				<!-- essa div vai aparecer com os 20 primeiros pokemon -->
+			<!-- Aqui serão exibidos os 20 primeiros Pokemon -->
 			</div>
-		</div>
+			<div class="centraliza-btn">
+		    <button class="btn-estilo carregar_mais">+20
+				<!-- ao clicar nesse botão deverá ser exibido os próximos pokemon -->
+			</button>
+			</div>
+			<div id="div-carregar-mais">
+			<!-- Aqui serão exibidos os 20 primeiros Pokemon -->
+			</div>
 	</body>
 </html>
