@@ -85,6 +85,6 @@ versão shiny ✅</li>
 
 <ul>
 <li>Testar o funcionamento da Pokédex em diferentes navegadores ✅</li>
-<li>>Verificar a responsividade em dispositivos móveis ✅</li>
+<li>Verificar a responsividade em dispositivos móveis ✅</li>
 <li>Corrija possíveis bugs e valide o código ✅</li>
 </ul>
