@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const pokemonData = await fetchPokemon(pokemonName);
 
         if (pokemonData) {
-            // 1. Cria a variável para os stats
             const maxStatValue = 255;
             const statsHTML = pokemonData.stats.map(statInfo => {
                 const statName = statInfo.stat.name;
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", async () => {
                 `;
             }).join('');
 
-            // 2. Monta o HTML do card ampliado
             const cardHTML = `
                 <div class="pokemon-card-ampliado">
                     <img id="pokemon-sprite" src="${pokemonData.sprites.front_default}" alt="${pokemonData.name}">
@@ -52,11 +50,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </div>
             `;
             
-            // 3. Insere o HTML na página
             container.innerHTML = cardHTML;
 
-            // 4. Encontra e adiciona os eventos aos botões
-            // É essencial que esta parte venha DEPOIS de container.innerHTML = cardHTML;
             const pokemonSprite = document.getElementById("pokemon-sprite");
             const btnNormal = document.getElementById("btn-normal");
             const btnShiny = document.getElementById("btn-shiny");

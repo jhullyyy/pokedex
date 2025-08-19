@@ -6,7 +6,6 @@
         <link rel="icon" href="images/pokeball.png" />
         <link rel="stylesheet" href="css/style.css" />
         <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
-
         <script defer src="js/script.js"></script>
         <title>Pokédex</title>
     </head>
@@ -15,22 +14,26 @@
             <a href="vinte.html">20 primeiros Pokemon</a>
         </nav>
         <header id="titulo">Pokedex</header>
-        <div id="pokedex-container">
-            <img src="images/pokedex.png" alt="Interface Pokedex" class="pokedex" />
-            <img src="#" alt="pokemon" class="pokemon_image" />
+        <div class="pokedex-body">
+            <div class="screen-container">
+                <img src="#" alt="pokemon" class="pokemon_image" />
+                <img src="images/pokedex.png" alt="Interface Pokedex" class="pokedex" />
+                <div class="pokemon_data">
+                    <span class="pokemon_number"></span> -
+                    <span class="pokemon_name"></span>
+                </div>
+            </div>
+
+            <div class="controls-container">
+                <form class="form">
+                    <input type="search" class="input_search" placeholder="Name or Number" required />
+                </form>
+
+                <div class="buttons">
+                    <button class="button btn-prev">&lt; Prev</button>
+                    <button class="button btn-next">Next &gt;</button>
+                </div>
+            </div>
         </div>
-        <div id="info-container">
-            <h1 class="pokemon_data">
-                <span class="pokemon_number"></span> -
-                <span class="pokemon_name"></span>
-            </h1>
-            <form class="form">
-                <input type="search" class="input_search" placeholder="Name or Number" required />
-            </form>
-            <div class="buttons">
-                <button class="button btn-prev">Prev &lt;</button>
-                <button class="button btn-next">Next &gt;</button>
-            </div>
-            </div>
     </body>
 </html>

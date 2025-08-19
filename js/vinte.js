@@ -1,14 +1,13 @@
 const exibir20Div = document.querySelector(".exibir-20");
 const button20 = document.querySelector(".btn-estilo.btn-20");
 const buttonCarregarMais = document.querySelector(".btn-estilo.carregar_mais");
-// Altere o valor inicial de offset para 0
+//valor inicial para 0
 let offset = 20;
 const limit = 20;
 const maxPokemon = 650;
 
-// Reutiliza a função de criar card para todos os botões
+// reutiliza a função de criar card para todos os botões
 const createPokemonCard = async (pokemon) => {
-    // A função já recebe o objeto 'pokemon' com os detalhes
     const cardLink = document.createElement("a");
     cardLink.className = "pokemon-card";
     cardLink.href = `habilidades.html?pokemon=${pokemon.name}`;
@@ -45,10 +44,10 @@ const fetchAllPokemons = async (currentOffset) => {
     return [];
 };
 
-// Carrega os 20 primeiros e limpa a tela
+//carrega os 20 primeiros e limpa a tela
 button20.addEventListener("click", async () => {
     exibir20Div.innerHTML = "";
-    offset = 0; // Reseta o offset
+    offset = 0; 
     const pokemons = await fetchAllPokemons(offset);
 
     for (const pokemon of pokemons) {
@@ -56,11 +55,11 @@ button20.addEventListener("click", async () => {
         const cardLink = await createPokemonCard(details);
         exibir20Div.appendChild(cardLink);
     }
-    offset += limit; // Atualiza o offset para a próxima leva
+    offset += limit; //atualiza o offset 
     buttonCarregarMais.style.display = "block";
 });
 
-// Carrega mais 20 Pokemons (a partir do último offset)
+//carrega mais 20 Pokemons (a partir do último offset)
 buttonCarregarMais.addEventListener("click", async () => {
     if (offset >= maxPokemon) return;
     const pokemons = await fetchAllPokemons(offset);
@@ -73,7 +72,7 @@ buttonCarregarMais.addEventListener("click", async () => {
     offset += limit;
 });
 
-// Lógica de pesquisa - no final do arquivo
+//lógica de pesquisa - no final do arquivo
 const searchInput = document.querySelector(".pesquisa-pokemon");
 
 searchInput.addEventListener("keydown", async (event) => {
