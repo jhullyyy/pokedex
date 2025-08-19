@@ -71,4 +71,20 @@
 <li>Implementar a navegação para carregar mais Pokémon (paginação) ✅</li>
 </ul>
 
+<i>5)Funcionalidades Avançadas</i>
 
+<ul>
+<li>Adicionar a exibição de habilidades do Pokémon ✅</li>
+<li>Implementar a busca por múltiplos critérios (ex: tipo e nome) ✅</li>
+<li>Implementar botões para avançar para o próximo pokemon e retornar ao pokemon anterior ✅</li>
+<li>Implementar botões para trocar a image/sprite exibida do pokemon de acordo com o jogo e se é
+versão shiny ✅</li>
+</ul>
+
+<i>6)Testes e Correções</i>
+
+<ul>
+<li>Testar o funcionamento da Pokédex em diferentes navegadores ✅</li>
+<li>Verificar a responsividade em dispositivos móveis ✅</li>
+<li>Corrija possíveis bugs e valide o código ✅</li>
+</ul>
